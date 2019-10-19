@@ -15,7 +15,7 @@ module.exports = [
       "Android Ver": "4.1 and up"
     },
     {
-      "App": "Subway Surfers",
+      "App": "testSubway Surfers",
       "Category": "GAME",
       "Rating": 4.5,
       "Reviews": "27722264",
@@ -30,7 +30,7 @@ module.exports = [
       "Android Ver": "4.1 and up"
     },
     {
-      "App": "Candy Crush Saga",
+      "App": "testCandy Crush Saga",
       "Category": "GAME",
       "Rating": 4.4,
       "Reviews": "22426677",
@@ -45,7 +45,7 @@ module.exports = [
       "Android Ver": "4.1 and up"
     },
     {
-      "App": "Solitaire",
+      "App": "testSolitaire",
       "Category": "GAME",
       "Rating": 4.7,
       "Reviews": "254258",
@@ -75,7 +75,7 @@ module.exports = [
       "Android Ver": "4.0.3 and up"
     },
     {
-      "App": "Hello Kitty Nail Salon",
+      "App": "testHello Kitty Nail Salon",
       "Category": "GAME",
       "Rating": 4.2,
       "Reviews": "369203",
