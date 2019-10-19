@@ -35,7 +35,8 @@ app.get('/apps', (req, res) => {
 
     if (genres) {
         results.filter(genres => 
-            results.genres.toLowerCase().includes(search.toLowerCase()));
+            
+            results.genres && results.genres.toLowerCase().includes(search.toLowerCase()));
           
     }
         
