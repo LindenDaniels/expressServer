@@ -10,7 +10,7 @@ app.get('/apps', (req, res) => {
     const { search = "", sort } = req.query;
   
     if (sort) {
-      if (!['rating', 'app'].includes(sort)) {
+      if (!['Rating', 'App'].includes(sort)) {
         return res
           .status(400)
           .send('Sort must be rating or app');
