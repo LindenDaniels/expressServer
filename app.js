@@ -35,8 +35,11 @@ app.get('/apps', (req, res) => {
       if(!['Action', 'Puzzle', 'Strategy', 'Casual', 'Arcade', 'Card'].includes(Genres)) {
           return res.status(400).send('Genre must be action, puzzle, strategy, casual, arcade, or card.')
       }
+
       
-      results = playapps.filter(playapp => playapp.Genres.toLowerCase().includes(Genres.toLowerCase()));
+      results = playapps.filter(playapp => playapp.Genres.toLowerCase() === Genres.toLowerCase())
+
+      
 
   }
 
