@@ -45,13 +45,11 @@ describe('GET /apps', () => {
 
         return supertest(app)
         .get('/apps')
-        .query({ genre: 'Action' })
+        .query({ Genres: 'Action' })
         .expect(200)
         .expect('Content-Type', /json/)
         .then(res => {
-            expect(res.body.Genre).to.have.any.keys('Action');
-            console.log(res.body.genre);
-            expect(res.body.Genre).to.eql(expected);
+            expect(res.body).to.include('"Genre:" "Action"');
           });
     });
 });
