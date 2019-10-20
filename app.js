@@ -36,18 +36,13 @@ app.get('/apps', (req, res) => {
       if(!['Action', 'Puzzle', 'Strategy', 'Casual', 'Arcade', 'Card'].includes(Genres)) {
           return res.status(400).send('Genre must be action, puzzle, strategy, casual, arcade, or card.')
       }
-  }
-    if (Genres) {
-      if (playapps.Genres.toLowerCase().includes(Genres.toLowerCase())) {
-      
       let genre = playapps.filter(playapp => playapp.Genres.toLowerCase().includes(Genres.toLowerCase()));
-       
-      }
+  }
     
-    }
-  
+      
+    
     res
-      .json(results, genre);
+      .json(results);
   });
 
   app.listen(8000, () => {
