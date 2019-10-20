@@ -50,7 +50,7 @@ describe('GET /apps', () => {
         .expect('Content-Type', /json/)
         .then(res => {
             expect(res.body).to.be.an('array');
-            expect(res.body).to.have.deep.members([{ Genres: "Action" }]);
+            res.body.forEach(app => expect(app).to.include({ Genres: "Action" }))
 
           });
     });
