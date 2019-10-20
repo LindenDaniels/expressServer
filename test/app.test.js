@@ -49,7 +49,9 @@ describe('GET /apps', () => {
         .expect(200)
         .expect('Content-Type', /json/)
         .then(res => {
-            expect(res.body).to.include('"Genre:" "Action"');
+            expect(res.body).to.be.an('array');
+            expect(res.body).to.have.deep.members([{ Genres: "Action" }]);
+
           });
     });
 });
